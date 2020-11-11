@@ -1,0 +1,40 @@
+{
+  "name": "Query",
+  "fields": [
+    {
+      "fieldName": "queryName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "peckOrder",
+      "fieldType": "Integer"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "queryPlate",
+      "otherEntityRelationshipName": "query",
+      "relationshipName": "queryPlate"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "profile",
+      "otherEntityRelationshipName": "query",
+      "relationshipName": "profile",
+      "otherEntityField": "name"
+    }
+  ],
+  "changelogDate": "20200824151257",
+  "javadoc": "a collection of queries placed together\\nfor eg, \"profiles in my district\" and \"mother tongue tamil, telugu\"",
+  "entityTableName": "query",
+  "dto": "mapstruct",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

@@ -1,0 +1,19 @@
+Language  canEnterCustomValue -
+                        Assamese
+                        Bengali
+                        Gujarati
+                        Hindi
+                        Kannada
+                        Konkani
+                        Malayalam
+                        Marathi
+                        Marwadi
+                        Oriya
+                        Parsi
+                        Punjabi
+                        Sindhi
+                        Sourashtra
+                        Tamil
+                        Telugu
+                        Tulu
+                        Urdu

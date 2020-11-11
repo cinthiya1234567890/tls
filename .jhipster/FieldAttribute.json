@@ -1,0 +1,33 @@
+{
+  "name": "FieldAttribute",
+  "fields": [
+    {
+      "fieldName": "attributeName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "attributeValue",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "field",
+      "otherEntityRelationshipName": "fieldAttribute",
+      "relationshipName": "field",
+      "otherEntityField": "fieldName"
+    }
+  ],
+  "changelogDate": "20201013165907",
+  "entityTableName": "field_attribute",
+  "dto": "mapstruct",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

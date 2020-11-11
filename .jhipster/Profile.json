@@ -1,0 +1,99 @@
+{
+  "name": "Profile",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "dateOfBirth",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "phone",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "createdTime",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "loginTime",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "prevLoginTime",
+      "fieldType": "Instant"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "user",
+      "otherEntityRelationshipName": "profile",
+      "relationshipName": "user",
+      "otherEntityField": "login",
+      "ownerSide": true
+    },
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "profileParam",
+      "otherEntityRelationshipName": "profile",
+      "relationshipName": "profileParam"
+    },
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "photo",
+      "otherEntityRelationshipName": "profile",
+      "relationshipName": "photo"
+    },
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "contact",
+      "otherEntityRelationshipName": "sender",
+      "relationshipName": "sent"
+    },
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "contact",
+      "otherEntityRelationshipName": "receiver",
+      "relationshipName": "received"
+    },
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "query",
+      "otherEntityRelationshipName": "profile",
+      "relationshipName": "query"
+    },
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "payment",
+      "otherEntityRelationshipName": "payer",
+      "relationshipName": "payment"
+    },
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "issue",
+      "otherEntityRelationshipName": "complaint",
+      "relationshipName": "issued"
+    },
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "issue",
+      "otherEntityRelationshipName": "admin",
+      "relationshipName": "addressed"
+    }
+  ],
+  "changelogDate": "20200824150557",
+  "javadoc": "record of one person",
+  "entityTableName": "profile",
+  "dto": "mapstruct",
+  "pagination": "infinite-scroll",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

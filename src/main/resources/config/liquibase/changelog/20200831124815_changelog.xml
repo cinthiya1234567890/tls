@@ -1,0 +1,273 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:pro="http://www.liquibase.org/xml/ns/pro" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-3.9.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd">
+    <changeSet author="Admin (generated)" id="1598878110132-11">
+        <createTable tableName="cascader">
+            <column autoIncrement="true" name="id" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="cascaderPK"/>
+            </column>
+            <column name="can_enter_custom_value" type="BIT"/>
+            <column name="cascader_name" type="VARCHAR(255)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="Admin (generated)" id="1598878110132-12">
+        <createTable tableName="cascader_param">
+            <column autoIncrement="true" name="id" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="cascader_paramPK"/>
+            </column>
+            <column name="level_index" type="INT"/>
+            <column name="param_title" type="VARCHAR(255)"/>
+            <column name="peck_order" type="INT"/>
+            <column name="cascader_id" type="BIGINT"/>
+            <column name="parent_id" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="Admin (generated)" id="1598878110132-13">
+        <createTable tableName="contact">
+            <column autoIncrement="true" name="id" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="contactPK"/>
+            </column>
+            <column name="initiated_date" type="datetime(6)"/>
+            <column name="updated_date" type="datetime(6)"/>
+            <column name="contact_status_id" type="BIGINT"/>
+            <column name="receiver_id" type="BIGINT"/>
+            <column name="sender_id" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="Admin (generated)" id="1598878110132-14">
+        <createTable tableName="field">
+            <column autoIncrement="true" name="id" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="fieldPK"/>
+            </column>
+            <column name="field_name" type="VARCHAR(255)"/>
+            <column name="peck_order" type="INT"/>
+            <column name="cascader_id" type="BIGINT"/>
+            <column name="data_source_id" type="BIGINT"/>
+            <column name="data_type_id" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="Admin (generated)" id="1598878110132-15">
+        <createTable tableName="issue">
+            <column autoIncrement="true" name="id" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="issuePK"/>
+            </column>
+            <column name="created_time" type="datetime(6)"/>
+            <column name="description" type="VARCHAR(255)"/>
+            <column name="updated_time" type="datetime(6)"/>
+            <column name="admin_id" type="BIGINT"/>
+            <column name="complaint_id" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="Admin (generated)" id="1598878110132-16">
+        <createTable tableName="mala">
+            <column autoIncrement="true" name="id" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="malaPK"/>
+            </column>
+            <column name="description" type="VARCHAR(255)"/>
+            <column name="is_editable" type="BIT"/>
+            <column name="mala_name" type="VARCHAR(255)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="Admin (generated)" id="1598878110132-17">
+        <createTable tableName="mala_param">
+            <column autoIncrement="true" name="id" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="mala_paramPK"/>
+            </column>
+            <column name="peck_order" type="INT"/>
+            <column name="field_id" type="BIGINT"/>
+            <column name="mala_id" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="Admin (generated)" id="1598878110132-18">
+        <createTable tableName="payment">
+            <column autoIncrement="true" name="id" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="paymentPK"/>
+            </column>
+            <column name="amount" type="INT"/>
+            <column name="description" type="VARCHAR(255)"/>
+            <column name="payment_date" type="datetime(6)"/>
+            <column name="validity_date" type="date"/>
+            <column name="payer_id" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="Admin (generated)" id="1598878110132-19">
+        <createTable tableName="photo">
+            <column autoIncrement="true" name="id" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="photoPK"/>
+            </column>
+            <column name="filename" type="VARCHAR(255)"/>
+            <column name="peck_order" type="INT"/>
+            <column name="profile_id" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="Admin (generated)" id="1598878110132-20">
+        <createTable tableName="plate_param">
+            <column autoIncrement="true" name="id" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="plate_paramPK"/>
+            </column>
+            <column name="peck_order" type="INT"/>
+            <column name="value" type="VARCHAR(255)"/>
+            <column name="cascader_id" type="BIGINT"/>
+            <column name="query_plate_id" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="Admin (generated)" id="1598878110132-21">
+        <createTable tableName="profile">
+            <column autoIncrement="true" name="id" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="profilePK"/>
+            </column>
+            <column name="created_time" type="datetime(6)"/>
+            <column name="date_of_birth" type="date"/>
+            <column name="login_time" type="datetime(6)"/>
+            <column name="name" type="VARCHAR(255)"/>
+            <column name="phone" type="VARCHAR(255)"/>
+            <column name="prev_login_time" type="datetime(6)"/>
+            <column name="user_id" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="Admin (generated)" id="1598878110132-22">
+        <createTable tableName="profile_param">
+            <column autoIncrement="true" name="id" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="profile_paramPK"/>
+            </column>
+            <column name="data_int" type="INT"/>
+            <column name="data_value" type="VARCHAR(255)"/>
+            <column name="user_entered_custom_value" type="VARCHAR(255)"/>
+            <column name="cascader_param_id" type="BIGINT"/>
+            <column name="field_id" type="BIGINT"/>
+            <column name="profile_id" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="Admin (generated)" id="1598878110132-23">
+        <createTable tableName="query">
+            <column autoIncrement="true" name="id" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="queryPK"/>
+            </column>
+            <column name="peck_order" type="INT"/>
+            <column name="query_name" type="VARCHAR(255)"/>
+            <column name="profile_id" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="Admin (generated)" id="1598878110132-24">
+        <createTable tableName="query_plate">
+            <column autoIncrement="true" name="id" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="query_platePK"/>
+            </column>
+            <column name="is_multi" type="BIT"/>
+            <column name="is_range" type="BIT"/>
+            <column name="peck_order" type="INT"/>
+            <column name="field_id" type="BIGINT"/>
+            <column name="query_id" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="Admin (generated)" id="1598878110132-25">
+        <createTable tableName="vital">
+            <column autoIncrement="true" name="id" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="vitalPK"/>
+            </column>
+            <column name="vital_name" type="VARCHAR(255)"/>
+            <column name="vital_value" type="VARCHAR(255)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="Admin (generated)" id="1598878110132-26">
+        <addUniqueConstraint columnNames="user_id" constraintName="UC_PROFILEUSER_ID_COL" tableName="profile"/>
+    </changeSet>
+    <changeSet author="Admin (generated)" id="1598878110132-27">
+        <addForeignKeyConstraint baseColumnNames="payer_id" baseTableName="payment" constraintName="FK11nrpbtkf6loqpc5n6tsdallj" deferrable="false" initiallyDeferred="false" referencedColumnNames="id" referencedTableName="profile" validate="true"/>
+    </changeSet>
+    <changeSet author="Admin (generated)" id="1598878110132-28">
+        <addForeignKeyConstraint baseColumnNames="profile_id" baseTableName="query" constraintName="FK142pwus36v1gp40wg8qhh03da" deferrable="false" initiallyDeferred="false" referencedColumnNames="id" referencedTableName="profile" validate="true"/>
+    </changeSet>
+    <changeSet author="Admin (generated)" id="1598878110132-29">
+        <addForeignKeyConstraint baseColumnNames="cascader_id" baseTableName="plate_param" constraintName="FK3q5la8hrnsuf8kxurumydpoeq" deferrable="false" initiallyDeferred="false" referencedColumnNames="id" referencedTableName="cascader" validate="true"/>
+    </changeSet>
+    <changeSet author="Admin (generated)" id="1598878110132-30">
+        <addForeignKeyConstraint baseColumnNames="complaint_id" baseTableName="issue" constraintName="FK48f8qxevqq2che2f5tbjrhy7b" deferrable="false" initiallyDeferred="false" referencedColumnNames="id" referencedTableName="profile" validate="true"/>
+    </changeSet>
+    <changeSet author="Admin (generated)" id="1598878110132-31">
+        <addForeignKeyConstraint baseColumnNames="cascader_param_id" baseTableName="profile_param" constraintName="FK6oyceare1ptg6vgsfwo399jvo" deferrable="false" initiallyDeferred="false" referencedColumnNames="id" referencedTableName="cascader_param" validate="true"/>
+    </changeSet>
+    <changeSet author="Admin (generated)" id="1598878110132-32">
+        <addForeignKeyConstraint baseColumnNames="mala_id" baseTableName="mala_param" constraintName="FK7sip2ovekroik0x32t6cvirw8" deferrable="false" initiallyDeferred="false" referencedColumnNames="id" referencedTableName="mala" validate="true"/>
+    </changeSet>
+    <changeSet author="Admin (generated)" id="1598878110132-33">
+        <addForeignKeyConstraint baseColumnNames="receiver_id" baseTableName="contact" constraintName="FKb4g1ufykx3ov87by3ovfai6n5" deferrable="false" initiallyDeferred="false" referencedColumnNames="id" referencedTableName="profile" validate="true"/>
+    </changeSet>
+    <changeSet author="Admin (generated)" id="1598878110132-34">
+        <addForeignKeyConstraint baseColumnNames="cascader_id" baseTableName="cascader_param" constraintName="FKbr4tpf9akn6pw1anqunr69uda" deferrable="false" initiallyDeferred="false" referencedColumnNames="id" referencedTableName="cascader" validate="true"/>
+    </changeSet>
+    <changeSet author="Admin (generated)" id="1598878110132-35">
+        <addForeignKeyConstraint baseColumnNames="field_id" baseTableName="query_plate" constraintName="FKc52ru2aspo8k7pp257x0b1gqg" deferrable="false" initiallyDeferred="false" referencedColumnNames="id" referencedTableName="field" validate="true"/>
+    </changeSet>
+    <changeSet author="Admin (generated)" id="1598878110132-36">
+        <addForeignKeyConstraint baseColumnNames="profile_id" baseTableName="profile_param" constraintName="FKdcywrwasbx4dnqypg1qrsupw8" deferrable="false" initiallyDeferred="false" referencedColumnNames="id" referencedTableName="profile" validate="true"/>
+    </changeSet>
+    <changeSet author="Admin (generated)" id="1598878110132-37">
+        <addForeignKeyConstraint baseColumnNames="query_plate_id" baseTableName="plate_param" constraintName="FKgabo0157qi2xbklr7ryxku6vp" deferrable="false" initiallyDeferred="false" referencedColumnNames="id" referencedTableName="query_plate" validate="true"/>
+    </changeSet>
+    <changeSet author="Admin (generated)" id="1598878110132-38">
+        <addForeignKeyConstraint baseColumnNames="sender_id" baseTableName="contact" constraintName="FKggrhs50tkwlk3k39xl4fuwbsu" deferrable="false" initiallyDeferred="false" referencedColumnNames="id" referencedTableName="profile" validate="true"/>
+    </changeSet>
+    <changeSet author="Admin (generated)" id="1598878110132-39">
+        <addForeignKeyConstraint baseColumnNames="parent_id" baseTableName="cascader_param" constraintName="FKgxwvofryw2jbcujfqfq2q9s62" deferrable="false" initiallyDeferred="false" referencedColumnNames="id" referencedTableName="cascader_param" validate="true"/>
+    </changeSet>
+    <changeSet author="Admin (generated)" id="1598878110132-40">
+        <addForeignKeyConstraint baseColumnNames="query_id" baseTableName="query_plate" constraintName="FKh901n9ymltkb99ljsptnxq3l1" deferrable="false" initiallyDeferred="false" referencedColumnNames="id" referencedTableName="query" validate="true"/>
+    </changeSet>
+    <changeSet author="Admin (generated)" id="1598878110132-41">
+        <addForeignKeyConstraint baseColumnNames="user_id" baseTableName="profile" constraintName="FKhpks30secbw6ww6sjplw9xtth" deferrable="false" initiallyDeferred="false" referencedColumnNames="id" referencedTableName="jhi_user" validate="true"/>
+    </changeSet>
+    <changeSet author="Admin (generated)" id="1598878110132-42">
+        <addForeignKeyConstraint baseColumnNames="admin_id" baseTableName="issue" constraintName="FKke8l5h5vlkgepmn35sk8f3pu9" deferrable="false" initiallyDeferred="false" referencedColumnNames="id" referencedTableName="profile" validate="true"/>
+    </changeSet>
+    <changeSet author="Admin (generated)" id="1598878110132-43">
+        <addForeignKeyConstraint baseColumnNames="data_type_id" baseTableName="field" constraintName="FKkpkoqj8b12vh9gydxmdrrv234" deferrable="false" initiallyDeferred="false" referencedColumnNames="id" referencedTableName="cascader_param" validate="true"/>
+    </changeSet>
+    <changeSet author="Admin (generated)" id="1598878110132-44">
+        <addForeignKeyConstraint baseColumnNames="field_id" baseTableName="mala_param" constraintName="FKm4nifk9lnom0f7j0qrj1g67e" deferrable="false" initiallyDeferred="false" referencedColumnNames="id" referencedTableName="field" validate="true"/>
+    </changeSet>
+    <changeSet author="Admin (generated)" id="1598878110132-45">
+        <addForeignKeyConstraint baseColumnNames="field_id" baseTableName="profile_param" constraintName="FKnu4rbrwq0hgqgpapl2a1k2vo0" deferrable="false" initiallyDeferred="false" referencedColumnNames="id" referencedTableName="field" validate="true"/>
+    </changeSet>
+    <changeSet author="Admin (generated)" id="1598878110132-46">
+        <addForeignKeyConstraint baseColumnNames="data_source_id" baseTableName="field" constraintName="FKoc6mef08tmjysixxoll9fao3a" deferrable="false" initiallyDeferred="false" referencedColumnNames="id" referencedTableName="cascader_param" validate="true"/>
+    </changeSet>
+    <changeSet author="Admin (generated)" id="1598878110132-47">
+        <addForeignKeyConstraint baseColumnNames="profile_id" baseTableName="photo" constraintName="FKp11t3yvhnat5s1et2odo01jwq" deferrable="false" initiallyDeferred="false" referencedColumnNames="id" referencedTableName="profile" validate="true"/>
+    </changeSet>
+    <changeSet author="Admin (generated)" id="1598878110132-48">
+        <addForeignKeyConstraint baseColumnNames="cascader_id" baseTableName="field" constraintName="FKqeq3sgqo92r5huv348a09ct8c" deferrable="false" initiallyDeferred="false" referencedColumnNames="id" referencedTableName="cascader" validate="true"/>
+    </changeSet>
+    <changeSet author="Admin (generated)" id="1598878110132-49">
+        <addForeignKeyConstraint baseColumnNames="contact_status_id" baseTableName="contact" constraintName="FKsjefmjcggw7q8ppfevx9fk79c" deferrable="false" initiallyDeferred="false" referencedColumnNames="id" referencedTableName="cascader_param" validate="true"/>
+    </changeSet>
+    <changeSet author="Admin (generated)" id="1598878110132-1">
+        <dropDefaultValue columnDataType="varchar(20)" columnName="activation_key" tableName="jhi_user"/>
+    </changeSet>
+    <changeSet author="Admin (generated)" id="1598878110132-2">
+        <dropDefaultValue columnDataType="varchar(254)" columnName="email" tableName="jhi_user"/>
+    </changeSet>
+    <changeSet author="Admin (generated)" id="1598878110132-3">
+        <dropDefaultValue columnDataType="varchar(255)" columnName="event_type" tableName="jhi_persistent_audit_event"/>
+    </changeSet>
+    <changeSet author="Admin (generated)" id="1598878110132-4">
+        <dropDefaultValue columnDataType="varchar(50)" columnName="first_name" tableName="jhi_user"/>
+    </changeSet>
+    <changeSet author="Admin (generated)" id="1598878110132-5">
+        <dropDefaultValue columnDataType="varchar(256)" columnName="image_url" tableName="jhi_user"/>
+    </changeSet>
+    <changeSet author="Admin (generated)" id="1598878110132-6">
+        <dropDefaultValue columnDataType="varchar(10)" columnName="lang_key" tableName="jhi_user"/>
+    </changeSet>
+    <changeSet author="Admin (generated)" id="1598878110132-7">
+        <dropDefaultValue columnDataType="varchar(50)" columnName="last_modified_by" tableName="jhi_user"/>
+    </changeSet>
+    <changeSet author="Admin (generated)" id="1598878110132-8">
+        <dropDefaultValue columnDataType="varchar(50)" columnName="last_name" tableName="jhi_user"/>
+    </changeSet>
+    <changeSet author="Admin (generated)" id="1598878110132-9">
+        <dropDefaultValue columnDataType="varchar(20)" columnName="reset_key" tableName="jhi_user"/>
+    </changeSet>
+    <changeSet author="Admin (generated)" id="1598878110132-10">
+        <dropDefaultValue columnDataType="varchar(255)" columnName="value" tableName="jhi_persistent_audit_evt_data"/>
+    </changeSet>
+</databaseChangeLog>

@@ -1,0 +1,26 @@
+{
+  "name": "Vital",
+  "fields": [
+    {
+      "fieldName": "vitalName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "vitalValue",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [],
+  "changelogDate": "20200824151957",
+  "javadoc": "useful data related to website.  eg\\nagencyBanner, webAdminEmail, numOfPhotos\\nnumberOfMonthsPerTerm, termFees",
+  "entityTableName": "vital",
+  "dto": "mapstruct",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

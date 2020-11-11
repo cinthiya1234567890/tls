@@ -1,0 +1,37 @@
+{
+  "name": "MalaParam",
+  "fields": [
+    {
+      "fieldName": "peckOrder",
+      "fieldType": "Integer"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "mala",
+      "otherEntityRelationshipName": "malaParam",
+      "relationshipName": "mala",
+      "otherEntityField": "malaName"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "field",
+      "otherEntityRelationshipName": "malaParam",
+      "relationshipName": "field",
+      "otherEntityField": "fieldName"
+    }
+  ],
+  "changelogDate": "20200824151657",
+  "javadoc": "the list of fields of a Mala",
+  "entityTableName": "mala_param",
+  "dto": "mapstruct",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

@@ -1,0 +1,608 @@
+Caste  canEnterCustomValue -  
+Adaviyar[
+Weaver/
+]
+/
+Adi Dravidar (SC)[
+Arunthathiar/
+Harijan/
+Kongu/
+Pallar/
+Parayan/
+Parayan Parayar/
+Sambavar/
+Sangu/
+Telugu Adi Madiga/
+]
+/
+Ambalakarar[
+Arunthathiar/
+Chackkiliyar/
+Jana/
+Reddy/
+Thasari/
+]
+/
+Arunthathiyar[
+Chackkiliyar/
+Jana/
+Reddy/
+Thasari/
+]
+/
+Bania Gujarathi[
+]
+/
+Bhavasar Kshatriya[
+]
+/
+Boyer[
+Bandivallu/
+Chellavaru/
+Gujalaru/
+Karumbu kulam/
+Pandi Pattaru/
+Rajulu/
+Thandalvar/
+Upputhalavar/
+Vallaparu/
+]
+/
+Brahmin Punjabi[
+]
+/
+Brahmin Varma[
+]
+/
+Brahmin Gujarathi[
+]
+/
+Brahmin Marathi[
+Desastha/
+Mathwa Desastha/
+Smarha/
+]
+/
+Brahmin Gurukkal[
+]
+/
+Brahmin Hindi[
+Kanyakubj/
+]
+/
+Brahmin Iyengar[
+Thenkalai/
+Vadakalai/
+]
+/
+Brahmin Iyer[
+Astasahastram/
+Brahacharanam/
+Chozhya/
+Sivachariar/
+Sozhiyal/
+Vadamal/
+Vathimal/
+]
+/
+Brahmin Madhwa Kannada[
+Aruvelu/
+Desastha/
+Kannada Desastha Madhwa Brahmin/
+Kannada Smartha/
+Udipi Brahmin/
+]
+/
+Brahmin Palghat[
+Vadamal/
+]
+/
+Brahmin Telugu[
+Aruvelu/
+Karnakamma/
+Kona Samudram/
+Mulakanadu]
+/
+Bramani[
+]
+/
+Nandavarik[
+Niyogi/
+Velanadu/
+Venginadu/
+]
+/
+Chettiar[
+24 Manai Telugu/
+24 Manai Telegu   16 Veedu/
+24 Manai Telegu    8 Veedu/
+Achirapakkam Chettiar/
+Agaram Vellan Chettiar/
+Arya Vysyar/
+Ayira Vysya/
+Beri/
+Devanga/
+Elur/
+Gandla/Ganiga/
+Gavara/
+Kannadiar/
+Karuneegar/
+Kasukara/
+Kannada Devanga/
+Komutti/
+Kongu/
+Kuruhini Chetty/
+Manjapudur Chettiar/
+Nagarathar/
+Natukottai/
+Padmasaliar/
+Pannirandam Chettiar/
+Parvatha Rajakulam/
+Pattanava (Meenavar)/
+Pattu Saali/
+Sadhu/
+Senai Thalaivar Chettiar/
+Senaiyar/
+Sozhia/
+Telegu Devanga/
+Telugu Patti/
+Vadambar/
+Vaniar/
+Vaniba/
+Velan/
+Saiva Chettiar/
+Vellan/
+]
+/
+Desigar[
+]
+/
+Devandra Kula Vellalar[
+Vathiriyar/
+Pallan/
+]
+/
+Ezhuthachan[
+]
+/
+Gounder[
+Annuppa/
+Kongu Vellala/
+Kurumba/
+Malaiman/
+Naicker/
+Nattu Gounder/
+Padaiyatchi/
+Vakkaliga/
+Vannia Kula Kshatriya/
+Vanniyar/
+Vettuva/
+]
+/
+Gowda[
+Vakkaliga/
+]
+/
+Jalunder Jangam[
+]
+/
+Jangam[
+Desigar/
+Lingayat/
+Veerasaivam/
+Vellalar/
+Yogeeswarar/
+]
+/
+Kallar[
+Ambalam/
+Piramalai/
+Samayar/
+Sozhagar/
+Vandayar/
+]
+/
+Kannadiya Naicker[
+]
+/
+Karnikar[
+]
+/
+Keralites[
+Cheruman/
+Ezhava/
+Grupu/
+Menon/
+Nairs/
+Nambiar/
+Nambudhri/
+Panikkar/
+Pulaya/
+Thiyya/
+]
+/
+Konkani[
+]
+/
+Krishna Vaka[
+]
+/
+Kshatriya/Raja[
+Rajakulam/
+]
+/
+Kulalar[
+Mannudaiyar/
+Udayar/
+]
+/
+Kuravan[
+Raiyarthun/
+]
+/
+Lohana[
+]
+/
+Maharastrian[
+Chathriyan/
+]
+/
+Malayalalee[
+Thiyya/
+]
+/
+Maratha   Non Brahmin[
+]
+/
+Maruthuvar[
+Nai Brahmin/
+Navithar/
+Vettuvar/
+]
+/
+Moopanar[
+Senai Thalaivar/
+]
+/
+Mudaliar[
+Agamudiyar/
+Alamudi/
+Arcot/
+Isai Vellalar/
+Kaikolar/
+Pillai/
+Poondamalli Mudaliar/
+Saiva Vellalar/
+Saliyar/
+Senaithalaivar/
+Sengunthar/
+Thondai Mandala Saiva/
+ThuluvaVellalar/
+Vellalar/
+]
+/
+Mutharaiyar[
+]
+/
+Maravar/Mukkulathor/Thevar[
+Agamudiar/
+Agathi/
+Alagupandian/
+Ambalakarar/
+Anjukuthu/
+Easanattu Kallar/
+Kallar/
+Kondayan kottai/
+Maniyakarar/
+Maruveedu/
+Nattu mannar/
+Pattamkatti/
+Semma Nattar/
+Servai/
+Sethar/
+Seyankondar/
+Singampatti/
+Thanjavur Kallar/
+Urkadu Jamin/
+Vallambar/
+Veera Madathan/
+]
+/
+Muthuraja[
+Mavilan/
+Naicker/
+]
+/
+Muthuraja Ambalakarar[
+]
+/
+Nadar[
+Gramani/
+Kodikal/
+Kongu/
+]
+/
+Naicker[
+Kammavar/
+Raja Kambala Naicker/
+Gramani/
+Vannia Kula Kshatriya/
+]
+/
+Naidu[
+Balija/
+Bhatraju/
+Gajula/
+Gavara/
+Idiga/
+Kamma/
+Kapu/
+Mangala/
+Muthuraja/
+PadmaVelamu Naidu/
+Raja Kambala Naicker/
+Raju/
+Sawrashtra/
+Telegu Oddar/
+Telegu Yadava/
+Vellama/
+]
+/
+Nair[
+]
+/
+Namakkar Naidu (SC)[
+]
+/
+Namdev[
+]
+/
+Nepali[
+Jai c Bhawan/
+]
+/
+Nesavallar[
+ParvathRajakulam/
+Saliyar/
+]
+/
+Oriya Brahmin[
+]
+/
+Ottar(MBC)[
+Oddar/
+]
+/
+Pandaram[
+Jangam/
+Kovamsam/
+Lingayat/
+Veerasaivam/
+]
+/
+Pannaiyar[
+]
+/
+Parkavakulamr[
+Moopanar Surthimaan/
+]
+/
+Parvatha Rajakulam[
+Nattar/
+]
+/
+Pattariyar[
+]
+/
+Pillai[
+Aaru Nattu Vellala/
+Agamudaiyar/
+Cherakula Vellalar/
+Desikar/
+Illathupillai/
+Isai Vellalar/
+Kaikolar/
+Karai Kattu Pillai/
+Karkartha Saiva Pillai/
+Karuneegar/
+Nangudi Vellalar/
+Nanjil Mudali/
+Nanjil Nattu Vellalar/
+Othuvaar/
+Pandiya Vellalar/
+Saiva Pillai/
+Saiva Vellalar/
+Seer Karuneegar/
+Senaithalaivar/
+Siva Vellalar/
+Sozhia Vellalar/
+Thanjavur Saiva Pillai/
+Thanjavur Desikar/
+Thondai Mandala Vellalar/
+Thuluva Vellalar/
+Tirunelveli Saiva Pillai/
+Veerakodi Vellalar/
+Vellalar/
+Yadhava/
+]
+/
+Rajakula Agamudayar[
+Servai/
+]
+/
+Rajput[
+]
+/
+Rao[
+Kannada/
+]
+/
+Reddiar[
+Desuru/
+Kanchan/
+Kondal/
+Musuku/
+Paknat/
+Pokkanadu/
+]
+/
+Saliyar[
+Saliyar/
+Padma Saliyar/
+Pattu Saliyar/
+Adaviyar/
+Pattariar/
+]
+/
+Sathatha SriVaishnava[
+]
+/
+Schedule Tribes[
+]
+/
+Senai Thalaivar[
+Moopanar/
+]
+/
+Sindhi[
+]
+/
+Sindhi Brahmin[
+]
+/
+Singh[
+]
+/
+Sourashtra[
+Kulalar/
+Malayaman/
+Nathaman/
+Surthiman/
+]
+/
+Udayar[
+]
+/
+Uppara[
+]
+/
+Vallambar[
+Ambalam/
+]
+/
+Valluvan[
+]
+/
+Valluvan(S.C)[
+]
+/
+Valluvar[
+]
+/
+Vannan[
+Puthirai/
+]
+/
+Vannar[
+Kongu Vannar/
+Tamil/
+Telugu/
+]
+/
+Vannia Kula Kshatriya[
+Naicker/
+]
+/
+Vanniar[
+Arasu/
+Naicker/
+Padayachi/
+Pandhal/
+Vannia Kula Kshatriya/
+]
+/
+Veera Saiva Lingayath[
+]
+/
+Vellalar[
+]
+/
+Viswakarma Achari[
+Goldsmith/
+Kai Kolar/
+Kammalar/
+Malayalam/
+Tamil/
+Telugu/
+]
+/
+Yadav (U.P)Hindi[
+]
+/
+Yadava[
+Pudhuka Nattar/
+Konar/
+Nanda Gopal/
+Sambar/
+Tamil/
+Telugu/
+]
+/
+Ezhavar/IlluthuPillai[
+Mootu Illam/
+Pallik Illam/
+Thoranathu Illaml/
+]
+/
+Bharathar[
+]
+/
+Fernando[
+]
+/
+Mukkuvar[
+]
+/
+Meenavar[
+]
+/
+Paravar[
+]
+/
+Caste No Bar[
+]
+/
+Other castes[
+]
+/
+Dhakni[
+
+]
+/
+Urudu[
+
+]
+/
+Pattani[
+
+]
+/
+Sheik[
+
+]
+/
+Rowther[
+
+]
+/
+Lebbai[
+
+]
+/
+Sunni[
+
+]
+/
+Tamil[
+
+]

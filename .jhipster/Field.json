@@ -1,0 +1,72 @@
+{
+  "name": "Field",
+  "fields": [
+    {
+      "fieldName": "fieldName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "peckOrder",
+      "fieldType": "Integer"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "fieldAttribute",
+      "otherEntityRelationshipName": "field",
+      "relationshipName": "fieldAttribute"
+    },
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "profileParam",
+      "otherEntityRelationshipName": "field",
+      "relationshipName": "profileParam"
+    },
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "queryPlate",
+      "otherEntityRelationshipName": "field",
+      "relationshipName": "queryPlate"
+    },
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "malaParam",
+      "otherEntityRelationshipName": "field",
+      "relationshipName": "malaParam"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "cascaderParam",
+      "otherEntityRelationshipName": "dataSourcer",
+      "relationshipName": "dataSource",
+      "otherEntityField": "paramTitle"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "cascaderParam",
+      "otherEntityRelationshipName": "dataTyper",
+      "relationshipName": "dataType",
+      "otherEntityField": "paramTitle"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "cascader",
+      "otherEntityRelationshipName": "field",
+      "relationshipName": "cascader",
+      "otherEntityField": "cascaderName"
+    }
+  ],
+  "changelogDate": "20200824150657",
+  "javadoc": "all possible fields that profile record can have",
+  "entityTableName": "field",
+  "dto": "mapstruct",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

@@ -1,0 +1,259 @@
+/**
+ * JHipster JDL model for myMonolithApp
+ */
+/*
+ * application {
+  config {
+    packageName com.neemshade.matri
+    baseName matriSearchApp
+    applicationType monolith
+    databaseType sql
+  }
+  entities *
+}
+* 
+*/
+
+// ==============================
+// Entity definitions starts here
+// ==============================
+
+/** record of one person */
+entity Profile {
+	name String
+	dateOfBirth LocalDate
+	phone String
+	createdTime Instant
+	loginTime Instant
+	prevLoginTime Instant
+}
+
+relationship OneToOne {
+	Profile{user(login)} to User{profile} 
+}
+
+/** all possible fields that profile record can have */
+entity Field {
+	fieldName String
+	peckOrder Integer
+}
+
+
+entity FieldAttribute {
+	attributeName String
+	attributeValue String
+}
+
+/**
+ * a field can take any of the type like String, integer or cascader
+ */
+relationship OneToMany {
+    //Field{cascaderParam(paramTitle)} to CascaderParam{field(fieldName)}
+
+	 
+    CascaderParam{dataSourcer(fieldName)} to Field{dataSource(paramTitle)}
+	CascaderParam{dataTyper(fieldName)} to Field{dataType(paramTitle)}
+	
+	Field{fieldAttribute(attributeName)} to FieldAttribute{field(fieldName)}
+}
+
+/**
+ * what set of data value this field can take.
+ * this relation is valid only if the above type is cascader
+ */
+relationship OneToMany {
+     Cascader{field(fieldName)} to Field{cascader(cascaderName)}
+}
+
+/** actual data belonging to a person 
+ *  
+ * userEnteredCustomValue comes into picture when datatype is cascader,
+ * which has canEnterCustomValue=true. In that case, user may enter
+ * a custom value for this param.  That value is stored in userEnteredCustomValue
+ * */
+entity ProfileParam {
+	dataValue String
+	dataInt Integer
+	userEnteredCustomValue String
+}
+/**
+ * actual param pointed to, in case data type is cascader
+ */
+relationship OneToMany {
+	Profile{profileParam(dataValue)} to ProfileParam{profile(name)}
+	Field{profileParam(dataValue)} to ProfileParam{field(fieldName)} 
+    CascaderParam{profileParam(dataValue)} to ProfileParam{cascaderParam(paramTitle)}
+}
+
+/** photos of a person */
+entity Photo {
+	filename String
+	peckOrder Integer
+}
+
+
+relationship OneToMany {
+    Profile{photo(filename)} to Photo{profile(name)}
+}
+
+
+
+/** when a profile pass interest, decline, match are stored in Contact table */
+entity Contact {
+	initiatedDate Instant
+	updatedDate Instant
+}
+
+
+/**
+ * status of contact made, like interest, declined, accepted
+ */
+relationship OneToMany {
+    CascaderParam{contact} to Contact{contactStatus(paramTitle)}
+}
+
+relationship OneToMany {
+	Profile{sent} to Contact{sender} 
+	Profile{received} to Contact{receiver}
+}
+
+
+/** 
+ * possible values that a profileData can have
+ * cascader can be recursive, like location - country - state -city
+ * this set of data are stored in Cascader and CascaderParam tables.
+ * 
+ * canEnterCustomValue decides if user can place custom value instead of dropdown menu
+ */
+entity Cascader {
+	cascaderName String
+	canEnterCustomValue Boolean
+}
+
+/** entry for single param value */
+entity CascaderParam {
+	paramTitle String
+	peckOrder Integer
+	levelIndex Integer
+}
+
+relationship OneToMany {
+  CascaderParam{child} to CascaderParam{parent} 
+}
+
+relationship OneToMany {
+    Cascader{cascaderParam(paramTitle)} to CascaderParam{cascader(cascaderName)}
+}
+
+
+/**
+ * a collection of queries placed together
+ * for eg, "profiles in my district" and "mother tongue tamil, telugu"
+ */
+entity Query {
+	queryName String
+	peckOrder Integer
+}
+
+relationship OneToMany {
+    Profile{query(queryName)} to Query{profile(name)}
+}
+
+
+/**
+ * single query
+ */
+entity QueryPlate {
+	isRange Boolean
+	isMulti Boolean
+	peckOrder Integer
+}
+
+relationship OneToMany {
+    Query{queryPlate} to QueryPlate{query(queryName)}
+    Field{queryPlate} to QueryPlate{field(fieldName)} 
+}
+
+/**
+ * the query values that are checked for a QueryPlate
+ */
+entity PlateParam {
+	value String
+	peckOrder Integer
+}
+
+relationship OneToMany {
+    QueryPlate{plateParam} to PlateParam{queryPlate} 
+    Cascader{plateParam} to PlateParam{cascader(cascaderName)}
+}
+
+/** collection of parameters (fields) */
+entity Mala {
+	malaName String
+	isEditable Boolean
+	description String
+}
+
+/**
+ * the list of fields of a Mala
+ */
+entity MalaParam {
+	peckOrder Integer
+}
+
+relationship OneToMany {
+    Mala{malaParam} to MalaParam{mala(malaName)}
+    Field{malaParam} to MalaParam{field(fieldName)}
+}
+
+/** history of payment done by a person */
+entity Payment {
+	paymentDate Instant
+	amount Integer
+	validityDate LocalDate
+	description String
+}
+
+relationship OneToMany {
+    Profile{payment(paymentDate)} to Payment{payer(name)}
+}
+
+/** issue raised by the user and the status of the same */
+entity Issue {
+	createdTime Instant
+	updatedTime Instant
+	description String
+}
+
+relationship OneToMany {
+    Profile{issued} to Issue{complaint}
+    Profile{addressed} to Issue{admin}
+}
+
+
+/**
+ * useful data related to website.  eg
+ * agencyBanner, webAdminEmail, numOfPhotos
+ * numberOfMonthsPerTerm, termFees
+ */
+entity Vital {
+	vitalName String
+	vitalValue String
+}
+
+
+
+// =======
+// Options
+// =======
+
+// Set pagination options
+paginate Profile with infinite-scroll
+// paginate Job with pagination
+
+dto * with mapstruct
+
+// Set service options to all 
+service all with serviceImpl 
+// Set an angular suffix
+//angularSuffix * with mySuffix

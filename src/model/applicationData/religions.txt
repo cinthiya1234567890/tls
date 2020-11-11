@@ -1,0 +1,17 @@
+Religion  canEnterCustomValue -							
+							Hindu
+                            Anglo Indian
+                            Atheist
+                            Buddhist
+                            Caste No Bar
+                            C K P
+                            Christian
+                            Inter Caste
+                            Jain
+                            Jewish
+                            Muslim
+                            Parsi
+                            Sikh
+                            Nepali
+                            Zoroastrian
+                            Others

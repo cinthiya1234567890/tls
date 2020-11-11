@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd">
+    <!--
+        Added the constraints for entity Contact.
+    -->
+    <changeSet id="20200824150957-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="contact_status_id"
+                                 baseTableName="contact"
+                                 constraintName="fk_contact_contact_status_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="cascader_param"/>
+
+        <addForeignKeyConstraint baseColumnNames="sender_id"
+                                 baseTableName="contact"
+                                 constraintName="fk_contact_sender_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="profile"/>
+
+        <addForeignKeyConstraint baseColumnNames="receiver_id"
+                                 baseTableName="contact"
+                                 constraintName="fk_contact_receiver_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="profile"/>
+
+    </changeSet>
+</databaseChangeLog>

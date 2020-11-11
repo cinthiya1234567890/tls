@@ -1,0 +1,37 @@
+{
+  "name": "Mala",
+  "fields": [
+    {
+      "fieldName": "malaName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "isEditable",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "malaParam",
+      "otherEntityRelationshipName": "mala",
+      "relationshipName": "malaParam"
+    }
+  ],
+  "changelogDate": "20200824151557",
+  "javadoc": "collection of parameters (fields)",
+  "entityTableName": "mala",
+  "dto": "mapstruct",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

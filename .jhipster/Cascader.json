@@ -1,0 +1,45 @@
+{
+  "name": "Cascader",
+  "fields": [
+    {
+      "fieldName": "cascaderName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "canEnterCustomValue",
+      "fieldType": "Boolean"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "field",
+      "otherEntityRelationshipName": "cascader",
+      "relationshipName": "field"
+    },
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "cascaderParam",
+      "otherEntityRelationshipName": "cascader",
+      "relationshipName": "cascaderParam"
+    },
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "plateParam",
+      "otherEntityRelationshipName": "cascader",
+      "relationshipName": "plateParam"
+    }
+  ],
+  "changelogDate": "20200824151057",
+  "javadoc": "possible values that a profileData can have\\ncascader can be recursive, like location - country - state -city\\nthis set of data are stored in Cascader and CascaderParam tables.\\n\\ncanEnterCustomValue decides if user can place custom value instead of dropdown menu",
+  "entityTableName": "cascader",
+  "dto": "mapstruct",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

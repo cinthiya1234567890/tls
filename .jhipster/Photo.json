@@ -1,0 +1,34 @@
+{
+  "name": "Photo",
+  "fields": [
+    {
+      "fieldName": "filename",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "peckOrder",
+      "fieldType": "Integer"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "profile",
+      "otherEntityRelationshipName": "photo",
+      "relationshipName": "profile",
+      "otherEntityField": "name"
+    }
+  ],
+  "changelogDate": "20200824150857",
+  "javadoc": "photos of a person",
+  "entityTableName": "photo",
+  "dto": "mapstruct",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

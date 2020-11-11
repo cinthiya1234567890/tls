@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd">
+    <!--
+        Added the constraints for entity ProfileParam.
+    -->
+    <changeSet id="20200824150757-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="profile_id"
+                                 baseTableName="profile_param"
+                                 constraintName="fk_profile_param_profile_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="profile"/>
+
+        <addForeignKeyConstraint baseColumnNames="field_id"
+                                 baseTableName="profile_param"
+                                 constraintName="fk_profile_param_field_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="field"/>
+
+        <addForeignKeyConstraint baseColumnNames="cascader_param_id"
+                                 baseTableName="profile_param"
+                                 constraintName="fk_profile_param_cascader_param_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="cascader_param"/>
+
+    </changeSet>
+</databaseChangeLog>

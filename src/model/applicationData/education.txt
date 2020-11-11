@@ -1,0 +1,7 @@
+Education  canEnterCustomValue -
+		Bachelors
+		Diploma
+		Masters
+		Ph.D.
+		Trade school
+		Under Graduate

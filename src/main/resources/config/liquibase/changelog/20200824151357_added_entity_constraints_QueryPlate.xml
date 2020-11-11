@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd">
+    <!--
+        Added the constraints for entity QueryPlate.
+    -->
+    <changeSet id="20200824151357-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="query_id"
+                                 baseTableName="query_plate"
+                                 constraintName="fk_query_plate_query_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="query"/>
+
+        <addForeignKeyConstraint baseColumnNames="field_id"
+                                 baseTableName="query_plate"
+                                 constraintName="fk_query_plate_field_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="field"/>
+
+    </changeSet>
+</databaseChangeLog>

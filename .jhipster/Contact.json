@@ -1,0 +1,48 @@
+{
+  "name": "Contact",
+  "fields": [
+    {
+      "fieldName": "initiatedDate",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "updatedDate",
+      "fieldType": "Instant"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "cascaderParam",
+      "otherEntityRelationshipName": "contact",
+      "relationshipName": "contactStatus",
+      "otherEntityField": "paramTitle"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "profile",
+      "otherEntityRelationshipName": "sent",
+      "relationshipName": "sender",
+      "otherEntityField": "id"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "profile",
+      "otherEntityRelationshipName": "received",
+      "relationshipName": "receiver",
+      "otherEntityField": "id"
+    }
+  ],
+  "changelogDate": "20200824150957",
+  "javadoc": "when a profile pass interest, decline, match are stored in Contact table",
+  "entityTableName": "contact",
+  "dto": "mapstruct",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

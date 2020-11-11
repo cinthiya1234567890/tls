@@ -1,0 +1,75 @@
+{
+  "name": "CascaderParam",
+  "fields": [
+    {
+      "fieldName": "paramTitle",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "peckOrder",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "levelIndex",
+      "fieldType": "Integer"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "field",
+      "otherEntityRelationshipName": "dataSource",
+      "relationshipName": "dataSourcer"
+    },
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "field",
+      "otherEntityRelationshipName": "dataType",
+      "relationshipName": "dataTyper"
+    },
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "profileParam",
+      "otherEntityRelationshipName": "cascaderParam",
+      "relationshipName": "profileParam"
+    },
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "contact",
+      "otherEntityRelationshipName": "contactStatus",
+      "relationshipName": "contact"
+    },
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "cascaderParam",
+      "otherEntityRelationshipName": "parent",
+      "relationshipName": "child"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "cascaderParam",
+      "otherEntityRelationshipName": "child",
+      "relationshipName": "parent",
+      "otherEntityField": "id"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "cascader",
+      "otherEntityRelationshipName": "cascaderParam",
+      "relationshipName": "cascader",
+      "otherEntityField": "cascaderName"
+    }
+  ],
+  "changelogDate": "20200824151157",
+  "javadoc": "entry for single param value",
+  "entityTableName": "cascader_param",
+  "dto": "mapstruct",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

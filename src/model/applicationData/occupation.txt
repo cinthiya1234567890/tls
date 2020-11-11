@@ -1,0 +1,58 @@
+Occupation  canEnterCustomValue -
+Accountant
+Administrative
+Advertising visualiser
+Agriculture
+Architect
+Banking/Investment services
+Beautician/Fitness professional
+BPO
+Business person
+Chartered Accountant
+
+Civil Engineer
+ Civil Services  [IAS/ IFS/ IPS/ IRS]
+ Computer Engineer
+ Commercial Pilot 
+ Consultant
+ Creative Designer
+ Customer Support
+ Defense Services
+ Doctor
+ Engineer
+ Executive 
+ Fashion Designer
+ Government Employee
+ Human Resource
+ Interior Designer
+ Import/ Export 
+ IT/ Telecomm
+ Lawyer
+ Manager/ Management
+ Journalism
+ Logistics/ SCM
+ Marketing
+ Mechanical Engineer
+ Merchant Navy 
+ Nurse
+ Other
+ Professor
+ Pharmacist
+ Physiotherapist
+ Project Management 
+ Real Estate Related
+ Research Scholar
+ Sales
+ Scientist
+ Self Employed
+ Software Professional
+ Sports
+ Student 
+ Teacher
+ Technician
+ Ticketing
+ Web Related Profession
+ Home Maker
+ Do Not Plan to Work
+ Looking for a Job
+ Not Working

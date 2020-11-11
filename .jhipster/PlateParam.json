@@ -1,0 +1,41 @@
+{
+  "name": "PlateParam",
+  "fields": [
+    {
+      "fieldName": "value",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "peckOrder",
+      "fieldType": "Integer"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "queryPlate",
+      "otherEntityRelationshipName": "plateParam",
+      "relationshipName": "queryPlate",
+      "otherEntityField": "id"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "cascader",
+      "otherEntityRelationshipName": "plateParam",
+      "relationshipName": "cascader",
+      "otherEntityField": "cascaderName"
+    }
+  ],
+  "changelogDate": "20200824151457",
+  "javadoc": "the query values that are checked for a QueryPlate",
+  "entityTableName": "plate_param",
+  "dto": "mapstruct",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

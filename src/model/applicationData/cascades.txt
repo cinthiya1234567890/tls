@@ -1,0 +1,36 @@
+
+paramSource - userInbuiltParam/profileInbuiltParam/dynamicParam
+dataType - String/Integer/Boolean/Date/DateTime/cascader/Height
+
+createdBy canEnterCustomValue - Self/Parents/Gaurdian/Sibling/Relative/Friend/other
+
+# what action happens between two profiles
+contactStatus - Like/Decline/Accept
+
+
+gender - Male/Female
+
+maritalStatus - Never married/Widowed/Divorced/Awaiting divorce
+
+familyStatus canEnterCustomValue - Middle/Upper middle/Rich/Affluent
+
+familyType canEnterCustomValue - Joint/Nuclear
+
+familyValues  canEnterCustomValue - Orthodox/Traditional/Moderate/Liberal
+
+disability - Normal/Physically challenged
+
+employment  canEnterCustomValue - Govt psu/Private/Business/Defence/Self employed/Not working
+
+bodyType  canEnterCustomValue - Slim/Average/Athletic/Heavy
+
+eatingHabit  canEnterCustomValue - Veg/Non veg/Eggetarian
+
+drinkingHabit - No/Social/Yes
+
+smokingHabit - No/Occasionally/Yes
+
+
+parentStatus  canEnterCustomValue - Employed/Businessman/Professional/Retired/Not employed/Passed away
+
+height - 

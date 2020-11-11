@@ -1,0 +1,98 @@
+
+%Essentials
+
+	First name - String userInbuiltParam
+	Last name - String userInbuiltParam
+	Email - String userInbuiltParam
+	
+	
+
+	Date Of Birth - Date profileInbuiltParam
+	Phone - String profileInbuiltParam
+	
+
+Created time - DateTime profileInbuiltParam
+Login time - DateTime profileInbuiltParam
+Previous Login Time - DateTime profileInbuiltParam
+
+%Basic details
+
+aadhaar - String "Information not shared with anyone"
+
+Gender - cascader gender
+
+Profile created by - cascader createdBy
+Alternate phone - String
+
+
+%Social
+Religion - cascader Religion
+Mother tongue - cascader Language
+Caste/division - cascader Caste
+Gothram - String
+Dosham - String
+Raasi & star - cascader raasi
+Time of birth - String
+Place of birth - cascader Location
+ 
+ 
+%Personal details
+Marital status - cascader maritalStatus
+Number of children - Integer
+Height - Height
+Weight - Integer
+Family status - cascader familyStatus
+Family type - cascader familyType
+Family values - cascader familyValues
+Disability - cascader disability
+ 
+%Professional details
+Education - cascader Education
+College - String
+Employed in - cascader employment 
+Occupation - cascader Occupation
+Monthly income - Integer
+Organization - String
+
+Location - cascader Location
+ 
+#Photos (3)
+ 
+%Basic info
+Body type - cascader bodyType 
+
+
+ 
+%Life style
+Eating habit - cascader eatingHabit 
+Drinking habit - cascader drinkingHabit 
+Smoking habit - cascader smokingHabit 
+ 
+
+
+
+%Family info
+Father status - cascader parentStatus 
+Mother status - cascader parentStatus 
+Brothers - Integer
+Brothers married - Integer
+Sisters - Integer
+Sisters married - Integer
+Family location - cascader Location
+Ancestral origin - String
+ 
+%Partner Preferences
+Age - range 18 60
+Height - range Height
+Marital status - multi  cascader maritalStatus
+Have children - Boolean
+Eating habits - multi cascader eatingHabit 
+Drinking habit - multi cascader drinkingHabit 
+Smoking habit - multi cascader smokingHabit 
+Religion - multi cascader Religion
+Caste - multi cascader Caste
+Star - multi cascader raasi
+Location - multi cascader Location
+Education - multi cascader Education 
+Occupation - multi cascader Occupation
+Monthly income - range 10000 1000000

@@ -1,0 +1,51 @@
+{
+  "name": "QueryPlate",
+  "fields": [
+    {
+      "fieldName": "isRange",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "isMulti",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "peckOrder",
+      "fieldType": "Integer"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "plateParam",
+      "otherEntityRelationshipName": "queryPlate",
+      "relationshipName": "plateParam"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "query",
+      "otherEntityRelationshipName": "queryPlate",
+      "relationshipName": "query",
+      "otherEntityField": "queryName"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "field",
+      "otherEntityRelationshipName": "queryPlate",
+      "relationshipName": "field",
+      "otherEntityField": "fieldName"
+    }
+  ],
+  "changelogDate": "20200824151357",
+  "javadoc": "single query",
+  "entityTableName": "query_plate",
+  "dto": "mapstruct",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

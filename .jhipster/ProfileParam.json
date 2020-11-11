@@ -1,0 +1,52 @@
+{
+  "name": "ProfileParam",
+  "fields": [
+    {
+      "fieldName": "dataValue",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "dataInt",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "userEnteredCustomValue",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "profile",
+      "otherEntityRelationshipName": "profileParam",
+      "relationshipName": "profile",
+      "otherEntityField": "name"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "field",
+      "otherEntityRelationshipName": "profileParam",
+      "relationshipName": "field",
+      "otherEntityField": "fieldName"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "cascaderParam",
+      "otherEntityRelationshipName": "profileParam",
+      "relationshipName": "cascaderParam",
+      "otherEntityField": "paramTitle"
+    }
+  ],
+  "changelogDate": "20200824150757",
+  "javadoc": "actual data belonging to a person\\n\\nuserEnteredCustomValue comes into picture when datatype is cascader,\\nwhich has canEnterCustomValue=true. In that case, user may enter\\na custom value for this param.  That value is stored in userEnteredCustomValue\\n",
+  "entityTableName": "profile_param",
+  "dto": "mapstruct",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}
